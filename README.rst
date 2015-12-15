@@ -1,4 +1,4 @@
-An avahi-daemon container for Porject Atomic Host
+An avahi-daemon container for Project Atomic Host
 ---------------------------------------------------------------------
 
 This essentially provides a broadcast DNS responder inside a container
