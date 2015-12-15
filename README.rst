@@ -21,6 +21,7 @@ Notes:
 
 *  Modification of ``avahi-daemon.conf`` in the image may be necessary to
    fit your environment.
+   - e.g. update `allow-interfaces` for the Atomic OS
 
 * More info on the ``atomic`` command and Project Atomic can be found at
   https://github.com/projectatomic/atomic
