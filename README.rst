@@ -5,7 +5,10 @@ This essentially provides a broadcast DNS responder inside a container
 running on an Atomic Host.  It integrates with the ``atomic`` command
 to make installation simple.
 
-#.  ``docker build -t avahi-daemon git://github.com/cevich/atomic-avahi.git``
+Transfer content of this repository (as tar instead of zip) to Atomic Host.
+
+#.  extract repository and change working directory to there
+#.  ``docker build -t avahi-daemon .``
 #.  ``atomic install avahi-daemon``
 #.  ``systemctl --system daemon-reload``
 #.  ``systemctl start avahi-daemon``
