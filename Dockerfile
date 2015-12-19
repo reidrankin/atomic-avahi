@@ -1,6 +1,11 @@
+#
+# Derived from https://github.com/cevich/atomic-avahi
+#
 FROM centos:latest
-MAINTAINER cevich@redhat.com
-RUN yum install -y deltarpm yum-utils &&\
+
+MAINTAINER koyeung@gmail.com
+
+RUN yum install -y deltarpm yum-utils && \
     yum update -y && \
     yum install avahi -y && \
     yum clean all
