@@ -11,8 +11,8 @@ Transfer content of this repository (as tar instead of zip) to Atomic Host.
 1. `docker build -t avahi-daemon .`
 1. `atomic install avahi-daemon`
 1. `systemctl --system daemon-reload`
-1. `systemctl start avahi-daemon`
 1. `systemctl enable avahi-daemon`
+1. `systemctl start avahi-daemon`
 
 Notes:
 *  You'll need to run the build from a SPC containing git, or download and
