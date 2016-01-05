@@ -1,12 +1,11 @@
 #
 # Derived from https://github.com/cevich/atomic-avahi
 #
-FROM centos:latest
+FROM centos:7
 
-MAINTAINER koyeung@gmail.com
+MAINTAINER King-On Yeung <koyeung@gmail.com>
 
 RUN yum install -y deltarpm yum-utils && \
-    yum update -y && \
     yum install avahi -y && \
     yum clean all
 ADD avahi-daemon.conf /etc/avahi/
