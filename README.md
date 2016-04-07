@@ -18,8 +18,8 @@ Get image from dockerhub
 ==
 On Atomic Host:
 
-    # docker pull docker.io/koyeung/atomic-avahi
-    # docker tag docker.io/koyeung/atomic-avahi avahi-daemon
+    # docker pull koyeung/atomic-avahi
+    # docker tag koyeung/atomic-avahi avahi-daemon
 
 
 Setup and Run

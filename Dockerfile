@@ -1,13 +1,10 @@
 #
 # Derived from https://github.com/cevich/atomic-avahi
 #
-FROM centos:7
-
+FROM alpine:3.3
 MAINTAINER King-On Yeung <koyeung@gmail.com>
 
-RUN yum install -y deltarpm yum-utils && \
-    yum install avahi -y && \
-    yum clean all
+RUN apk add --no-cache avahi
 ADD avahi-daemon.conf /etc/avahi/
 ADD ssh.service /etc/avahi/services/
 ADD avahi-daemon.service /etc/systemd/system/
