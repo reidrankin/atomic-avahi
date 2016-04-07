@@ -21,7 +21,6 @@ On Atomic Host:
     # docker pull koyeung/atomic-avahi
     # docker tag koyeung/atomic-avahi avahi-daemon
 
-
 Setup and Run
 ==
     # atomic install avahi-daemon
@@ -32,8 +31,6 @@ Setup and Run
 
 Notes:
 
-* You'll need to run the build from a SPC containing git, or download and
-   build from a tarball.
 * Modification of `avahi-daemon.conf` in the image may be necessary to
   fit your environment.
   - e.g. update `allow-interfaces` for the Atomic Host network interfaces
