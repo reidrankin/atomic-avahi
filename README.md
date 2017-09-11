@@ -16,18 +16,8 @@ Transfer content of this repository (as tar instead of zip) to Atomic Host.
 
 Get image from dockerhub
 ==
-On Atomic Host:
-
-    # docker pull koyeung/atomic-avahi
-    # docker tag koyeung/atomic-avahi avahi-daemon
-
-Setup and Run
-==
-    # atomic install avahi-daemon
-    # systemctl --system daemon-reload
-    # systemctl enable avahi-daemon
+    # atomic install --system reidrankin/avahi-daemon
     # systemctl start avahi-daemon
-
 
 Notes:
 
