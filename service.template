@@ -1,0 +1,14 @@
+[Unit]
+Description=Avahi Container
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=60
+TimeoutSec=2
+ExecStart=$EXEC_START
+ExecStop=$EXEC_STOP
+WorkingDirectory=$DESTDIR
+
+[Install]
+WantedBy=multi-user.target
