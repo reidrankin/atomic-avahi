@@ -9,4 +9,3 @@ COPY ssh.service /etc/avahi/services/
 COPY service.template config.json.template /exports/
 
 LABEL atomic.type="system"
-LABEL RUN /usr/bin/docker run -d --privileged --net=host
